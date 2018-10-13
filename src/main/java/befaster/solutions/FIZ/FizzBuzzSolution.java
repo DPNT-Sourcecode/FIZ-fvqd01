@@ -13,11 +13,11 @@ public class FizzBuzzSolution {
         if (number % 5 == 0 || number.toString().contains("5"))
             result = result == "" ? "buzz" : "fizz buzz";
 
-        if (number > 10 && numberIdentical(number) && number % 2 == 0)
-            result = result == "" ? "deluxe" : result + " deluxe";
-
-        if (number > 10 && numberIdentical(number) && number % 2 == 1)
-            result = result == "" ? "fake deluxe" : result + " fake deluxe";
+        if (number > 10 && numberIdentical(number))
+            if (number % 2 == 0)
+                result = result == "" ? "deluxe" : result + " deluxe";
+            else
+                result = result == "" ? "fake deluxe" : result + " fake deluxe";
 
         return result == "" ? number.toString() : result;
     }
