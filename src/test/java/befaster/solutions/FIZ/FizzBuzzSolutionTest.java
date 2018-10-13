@@ -34,4 +34,9 @@ public class FizzBuzzSolutionTest {
         Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(15));
         Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(60));
     }
+    @Test
+    public void return_fizz_when_contains_3() {
+        Assert.assertEquals("fizz", fizzBuzzSolution.fizzBuzz(13));
+        Assert.assertEquals("fizz", fizzBuzzSolution.fizzBuzz(73));
+    }
 }
