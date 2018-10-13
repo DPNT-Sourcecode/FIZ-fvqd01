@@ -9,7 +9,7 @@ public class FizzBuzzSolution {
                 (number.toString().contains("3")
                         && number.toString().contains("5")) ||
                 (number % 3 == 0
-                        && number.toString().contains("5"))||
+                        && number.toString().contains("5")) ||
                 (number % 5 == 0
                         && number.toString().contains("3")))
             return "fizz buzz";
