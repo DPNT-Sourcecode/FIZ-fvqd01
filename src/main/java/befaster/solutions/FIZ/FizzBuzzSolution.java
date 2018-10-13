@@ -16,13 +16,10 @@ public class FizzBuzzSolution {
 
         if (number % 5 == 0 && number.toString().contains("5") ||
                 (number % 3 == 0 && number.toString().contains("3")))
-            result += " deluxe";
-
-        if (number > 10 && numberIdentical(number))
             if (number % 2 == 0)
-                result = result == "" ? "deluxe" : result + " deluxe";
+                result += " deluxe";
             else
-                result = result == "" ? "fake deluxe" : result + " fake deluxe";
+                result += " fake deluxe";
 
         return result == "" ? number.toString() : result;
     }
