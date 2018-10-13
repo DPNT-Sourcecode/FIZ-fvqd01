@@ -42,7 +42,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void return_fizz_when_contains_5() {
-        Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(51));
+        Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(52));
         Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(572));
     }
 }
