@@ -26,13 +26,13 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void return_buzz_when_divided_5() {
-        Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(5));
-        Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(25));
+        Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(10));
+        Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(20));
     }
 
     @Test
-    public void return_buzz_when_divided_3_5() {
-        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(15));
+    public void return_fizzbuzz_when_divided_3_5() {
+        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(120));
         Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(60));
     }
 

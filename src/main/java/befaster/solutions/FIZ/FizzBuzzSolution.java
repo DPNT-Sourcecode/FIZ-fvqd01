@@ -7,17 +7,18 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
 
         String result = "";
-        if (number % 3 == 0 || number.toString().contains("3"))
+        if (number % 3 == 0 || number.toString().contains("3")) {
             result = "fizz";
 
-        if (number % 3 == 0 && number.toString().contains("3"))
-            result += " deluxe";
-
-        if (number % 5 == 0 || number.toString().contains("5"))
+            if (number % 3 == 0 && number.toString().contains("3"))
+                result += " deluxe";
+        }
+        if (number % 5 == 0 || number.toString().contains("5")) {
             result = result == "" ? "buzz" : "fizz buzz";
 
-        if (number % 5 == 0 && number.toString().contains("5"))
-            result = result == "" ? "buzz" : result+" buzz deluxe";
+            if (number % 5 == 0 && number.toString().contains("5"))
+                result += " deluxe";
+        }
 
         if (number > 10 && numberIdentical(number))
             if (number % 2 == 0)
