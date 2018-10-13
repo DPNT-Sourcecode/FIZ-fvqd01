@@ -77,6 +77,11 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void return_fizz_buzz_deluxe_when_contains_3_5_dividedby_3_5() {
+        Assert.assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(5535));
+    }
+
+    @Test
     public void return_fakedeluxe_when_greaterthan10_and_identical_odd() {
         Assert.assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(11));
         Assert.assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(111));
