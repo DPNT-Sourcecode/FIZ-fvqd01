@@ -25,7 +25,7 @@ public class FizzBuzzSolution {
 
         for (int i = 1; i < strNumber.length(); i++) {
 
-            if (!firstChar.equals(strNumber.substring(i, i + 1)))
+            if (!firstChar.equals(strNumber.substring(i, i)))
                 return false;
         }
 
