@@ -67,9 +67,8 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void return_deluxe_when_greaterthan10_and_identical() {
-        Assert.assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(22));
-        Assert.assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(222));
+    public void return_deluxe_when_contains_3_dividedby_3() {
+        Assert.assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(303));
     }
 
     @Test
