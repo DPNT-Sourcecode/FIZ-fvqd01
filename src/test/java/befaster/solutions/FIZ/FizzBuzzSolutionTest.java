@@ -65,4 +65,9 @@ public class FizzBuzzSolutionTest {
         Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(230));
         Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(4370));
     }
+
+    @Test
+    public void return_deluxe_when_greaterthan10_and_identical() {
+        Assert.assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(11));
+    }
 }
