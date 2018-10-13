@@ -68,7 +68,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void return_fizz_deluxe_when_contains_3_dividedby_3() {
-        Assert.assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(300));
+        Assert.assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(306));
     }
 
     @Test
