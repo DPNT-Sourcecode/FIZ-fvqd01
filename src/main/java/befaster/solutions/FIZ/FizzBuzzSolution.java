@@ -9,6 +9,9 @@ public class FizzBuzzSolution {
         if(number.toString().contains("3"))
             return "fizz";
 
+        if(number.toString().contains("5"))
+            return "buzz";
+
         if (number % 3 == 0 && number % 5 == 0)
             return "fizz buzz";
 
