@@ -21,14 +21,17 @@ public class FizzBuzzSolutionTest {
     @Test
     public void return_fizz_when_divided_3() {
         Assert.assertEquals("fizz", fizzBuzzSolution.fizzBuzz(3));
+        Assert.assertEquals("fizz", fizzBuzzSolution.fizzBuzz(9));
     }
 
     @Test
     public void return_buzz_when_divided_5() {
         Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(5));
+        Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(25));
     }
     @Test
     public void return_buzz_when_divided_3_5() {
         Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(15));
+        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(60));
     }
 }
