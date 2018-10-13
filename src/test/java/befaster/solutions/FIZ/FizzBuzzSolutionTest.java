@@ -73,4 +73,12 @@ public class FizzBuzzSolutionTest {
         Assert.assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(5555));
         Assert.assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(555));
     }
+
+    @Test
+    public void return_fakedeluxe_when_greaterthan10_and_identical_odd() {
+        Assert.assertEquals("fake deluxe", fizzBuzzSolution.fizzBuzz(11));
+        Assert.assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(111));
+        Assert.assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(5555));
+        Assert.assertEquals("fizz buzz fake deluxe", fizzBuzzSolution.fizzBuzz(555));
+    }
 }
