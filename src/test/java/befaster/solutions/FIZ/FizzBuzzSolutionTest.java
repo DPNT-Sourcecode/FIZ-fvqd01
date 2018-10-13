@@ -51,4 +51,16 @@ public class FizzBuzzSolutionTest {
         Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(352));
         Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(3572));
     }
+
+    @Test
+    public void return_fizz_buzz_when_divide_3_contains_5() {
+        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(252));
+        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(4572));
+    }
+
+    @Test
+    public void return_fizz_buzz_when_divide_5_contains_3() {
+        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(230));
+        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(4370));
+    }
 }
