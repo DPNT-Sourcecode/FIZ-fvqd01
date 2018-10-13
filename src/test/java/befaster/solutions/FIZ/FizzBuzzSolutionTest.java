@@ -45,4 +45,10 @@ public class FizzBuzzSolutionTest {
         Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(52));
         Assert.assertEquals("buzz", fizzBuzzSolution.fizzBuzz(572));
     }
+
+    @Test
+    public void return_fizz_buzz_when_contains_5_contains_3() {
+        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(352));
+        Assert.assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(3572));
+    }
 }
