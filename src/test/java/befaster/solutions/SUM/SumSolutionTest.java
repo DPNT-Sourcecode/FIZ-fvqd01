@@ -19,11 +19,10 @@ public class SumSolutionTest {
     public void compute_sum() {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
-    
+
     @Test
     public void compute_sum_big_number() {
         assertThat(sum.compute(100, 100), equalTo(200));
     }
-
 
 }
